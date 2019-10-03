@@ -7,10 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top" FontSize="20"/>
-        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="532,378,0,0" VerticalAlignment="Top" Width="102" FontSize="20" Click="BtnAgregar_Click"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="667,378,0,0" VerticalAlignment="Top" Width="100" FontSize="20" Click="BtnCancelar_Click"/>
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="448,14,0,0" VerticalAlignment="Top" Width="129" FontSize="20" Height="34" Click="BtnAgregar_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="83,10,0,0" VerticalAlignment="Top" Width="100" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top" FontSize="20" Height="38" Width="55"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" Visibility="Hidden" HorizontalAlignment="Left" Margin="667,378,0,0" VerticalAlignment="Top" Width="100" FontSize="20" Click="BtnCancelar_Click"/>
+        <ComboBox x:Name="cbLista" HorizontalAlignment="Left" Margin="77,14,0,0" VerticalAlignment="Top" Width="340" FontSize="20" SelectionChanged="CbLista_SelectionChanged">
+            <ComboBoxItem>Alumno</ComboBoxItem>
+                <ComboBoxItem>Maestro</ComboBoxItem>
+            </ComboBox>
+            <Button x:Name="btnGuardar" Content="Guardar" Visibility="Hidden" HorizontalAlignment="Left" Margin="554,378,0,0" VerticalAlignment="Top" Width="96" Height="31" Click="BtnGuardar_Click" FontSize="20"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="449,14,0,0" VerticalAlignment="Top" Width="97" Height="34" Click="BtnAgregar_Click" FontSize="20"/>
+        <Grid x:Name="GrdInterfaz" HorizontalAlignment="Left" Height="320" Margin="10,53,0,0" VerticalAlignment="Top" Width="757"/>
     </Grid>
 </Window>

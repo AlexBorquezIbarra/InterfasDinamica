@@ -25,9 +25,40 @@ namespace InterfasDinamica
             InitializeComponent();
         }
 
-        private void BtnAgregar_Click(object sender, RoutedEventArgs e)
+        private void CbLista_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            GrdInterfaz.Visibility = Visibility.Hidden;
+            btnCancelar.Visibility = Visibility.Hidden;
+            btnGuardar.Visibility = Visibility.Hidden;
+        }
+
+        private void BtnGuardar_Click(object sender, RoutedEventArgs e)
+        {
+            GrdInterfaz.Visibility = Visibility.Hidden;
+            btnCancelar.Visibility = Visibility.Hidden;
+            btnGuardar.Visibility = Visibility.Hidden;
+        }
+
+        private void BtnAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            GrdInterfaz.Visibility = Visibility.Visible;
+            btnCancelar.Visibility = Visibility.Visible;
+            btnGuardar.Visibility = Visibility.Visible;
+            GrdInterfaz.Children.Clear();
+            switch(cbLista.SelectedIndex)
+            {
+                case 0:
+                    GrdInterfaz.Children.Add(new Alumno());
+                    break;
+                case 1:
+                    GrdInterfaz.Children.Add(new Maestro());
+                    break;
+            }
         }
     }
 }
