@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="InterfasDinamica.Maestro"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InterfasDinamica"
+             mc:Ignorable="d" Height="211.5" Width="306.5">
+    <Grid>
+        <TextBlock x:Name="lblNombreMaestro" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="lblCodigo" HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="Codigo" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="lblTitulo" HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Text="Titulo"/>
+        <TextBlock x:Name="lblMateria" HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Text="Materia"/>
+        <TextBox x:Name="txtNombreMaestro" HorizontalAlignment="Left" Height="28" Margin="123,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontSize="20"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="28" Margin="123,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontSize="20"/>
+        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="28" Margin="123,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontSize="20"/>
+        <TextBox x:Name="txtMateria" HorizontalAlignment="Left" Height="28" Margin="123,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontSize="20"/>
+
+    </Grid>
+</UserControl>
